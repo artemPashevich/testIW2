@@ -1,0 +1,30 @@
+.radio-button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-button-input {
+    display: none;
+  }
+  
+  .radio-button-label {
+    background-color: unset;
+    color: #FBFBFB;
+    border-radius: 14px;
+    border: 1px solid #272829;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  
+  .radio-button-label:hover {
+    border-color: #79e9ad;
+  }
+
+  .radio-button-input:checked + .radio-button-label {
+    border-color: #79e9ad;
+  }
+
+

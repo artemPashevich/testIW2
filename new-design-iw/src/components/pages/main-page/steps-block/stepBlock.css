@@ -1,0 +1,370 @@
+  
+  .steps-line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid transparent; /* Placeholder for border */
+  }
+  
+  .steps-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px; /* Border width */
+    height: var(--border-height, 0); /* Dynamic height based on custom property */
+    background: linear-gradient(180deg, #0A0E0E 0%, #79E9AD 100%);
+    transition: height 0.5s ease-out; /* Smooth transition */
+  }
+  
+  
+  
+
+
+  .step {
+    display: flex;
+  }
+
+  .step-number {
+    color: #79E9AD;
+    transition: color 3s ease, text-shadow 0.3s ease;
+  }
+
+  .step-number.animate-shadow {
+    text-shadow: 0 0 10px #79E9AD;
+}
+
+  .step-description {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+
+
+  @media (min-width: 390px) {
+    .project-steps-small {
+        margin-top: 20px;
+        margin-bottom: 80px;
+      }
+      
+      .step-title {
+        margin-bottom: 52px;
+        letter-spacing: -0.72px;
+      }
+    
+      .steps-line {
+        padding-left: 24px;
+      }
+      
+      .step {
+        margin-bottom: 60px;
+      }
+    
+      .step-number {
+        margin-right: 41px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+      }
+    
+      .step-description {
+        gap: 22px;
+      }
+      
+      .step h3 {
+        font-weight: 700;
+      }
+      
+      .step p {
+        font-weight: 600;
+      }
+      
+      .step-4 {
+        margin-bottom: 0px;
+      }
+    
+  }
+  
+  @media (min-width: 576px) {
+    .project-steps-small {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+      
+      .step-title {
+        margin-bottom: 52px;
+        letter-spacing: -0.88px;
+      }
+    
+      .steps-line {
+        padding-left: 32px;
+      }
+      
+      .step {
+        margin-bottom: 60px;
+      }
+    
+      .step-number {
+        margin-right: 45px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 29px; 
+      }
+    
+      .step-description {
+        gap: 22px;
+      }
+      .step-4 {
+        margin-bottom: 0px;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .project-steps-small {
+        margin-top: 60px;
+        margin-bottom: 80px;
+      }
+      
+      .step-title {
+        margin-bottom: 52px;
+        letter-spacing: -0.88px;
+      }
+    
+      .steps-line {
+        padding-left: 32px;
+      }
+      
+      .step {
+        margin-bottom: 60px;
+      }
+    
+      .step-number {
+        margin-right: 45px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 29px; 
+      }
+    
+      .step-description {
+        gap: 22px;
+      }
+      .step-4 {
+        margin-bottom: 0px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+    .project-steps-large {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+
+      .steps-block {
+        display: flex;
+        gap: 60px;
+      }
+      
+      .step-title {
+        margin-bottom: 60px;
+        letter-spacing: -0.96px;
+        text-align: center;
+      }
+
+.green-line {
+    position: relative;
+    width: 3px;
+  }
+  
+  .green-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px; 
+    height: var(--border-height, 0); 
+    background: linear-gradient(180deg, #0A0E0E 0%, #79E9AD 100%);
+    transition: height 0.5s ease-out; 
+  }
+  
+      
+
+      .step-1 {
+        margin-bottom: 0px;
+      }
+      
+      .step-2 {
+        margin-top: 219px;
+        margin-bottom: 179px;
+      }
+
+      .step-3 {
+        margin-top: 179px;
+        margin-bottom: 219px;
+      }
+
+      .step-4 {
+        margin-bottom: 0px;
+      }
+
+      .step-number {
+        margin-right: 45px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 29px; 
+      }
+    
+      .step-description {
+        gap: 28px;
+      }
+      
+  }
+  
+  @media (min-width: 1200px) {
+    .project-steps-large {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+
+      .steps-block {
+        gap: 60px;
+      }
+      
+      .step-title {
+        margin-bottom: 60px;
+        letter-spacing: -0.96px;
+      }
+      
+      .step-2 {
+        margin-top: 219px;
+        margin-bottom: 179px;
+      }
+
+      .step-3 {
+        margin-top: 179px;
+        margin-bottom: 219px;
+      }
+
+      .step-number {
+        margin-right: 47px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 29px; 
+      }
+    
+      .step-description {
+        gap: 28px;
+      }
+  }
+  
+  @media (min-width: 1440px) {
+    .project-steps-large {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+      .steps-block {
+        gap: 80px;
+      }
+      
+      .step-title {
+        margin-bottom: 60px;
+        letter-spacing:  -1.04px;
+      }
+      
+      .step-2 {
+        margin-top: 219px;
+        margin-bottom: 179px;
+      }
+
+      .step-3 {
+        margin-top: 179px;
+        margin-bottom: 219px;
+      }
+
+      .step-number {
+        margin-right: 45px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33px;
+      }
+    
+      .step-description {
+        gap: 28px;
+      }
+  }
+  
+  @media (min-width: 1600px) {
+    .project-steps-large {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+      .steps-block {
+        gap: 100px;
+      }
+      
+      .step-title {
+        margin-bottom: 60px;
+        letter-spacing:  -1.04px;
+      }
+      
+      .step-2 {
+        margin-top: 219px;
+        margin-bottom: 179px;
+      }
+
+      .step-3 {
+        margin-top: 179px;
+        margin-bottom: 219px;
+      }
+
+      .step-number {
+        margin-right: 45px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33px;
+      }
+    
+      .step-description {
+        gap: 28px;
+      }
+  }
+  
+  @media (min-width: 1920px) {
+    .project-steps-large {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+
+      .steps-block {
+        gap: 100px;
+      }
+      
+      .step-title {
+        margin-bottom: 60px;
+        letter-spacing:  -1.04px;
+      }
+      
+      .step-2 {
+        margin-top: 219px;
+        margin-bottom: 179px;
+      }
+
+      .step-3 {
+        margin-top: 179px;
+        margin-bottom: 219px;
+      }
+
+      .step-number {
+        margin-right: 45px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33px;
+      }
+    
+      .step-description {
+        gap: 28px;
+      }
+  }

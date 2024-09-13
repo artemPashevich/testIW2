@@ -1,0 +1,88 @@
+.details-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @keyframes dropDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+  
+  .details-form-p {
+    color: #727375;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-width: 435px;  delete next time */
+  }
+
+  .textfield-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .form-group-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .form-group {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    flex-direction: column;
+  }
+  
+  .form-group-label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-left: 8px;
+    text-align: left;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+
+
+  @media (min-width: 390px) {
+    .radio-group-services .radio-button-label {
+      padding: 14px 24px;
+    }
+    
+    .radio-group-budget .radio-button-label {
+      padding: 14px 30px;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .radio-group-services .radio-button-label {
+      padding: 14px 38px;
+    }
+    
+    .radio-group-budget .radio-button-label {
+      padding: 14px 19px;
+    }
+  }
+  

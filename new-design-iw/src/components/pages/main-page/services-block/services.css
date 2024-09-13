@@ -1,0 +1,313 @@
+
+.services-container {
+    display: flex;
+  }
+  
+  .service-card {
+    background-color: #0A0B0B;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .service-icon {
+    object-fit: cover;
+  }
+  
+  .service-title {
+    color: #FBFBFB;
+  }
+  
+  .service-description {
+    color: #727375;
+  }
+
+  .border-wrapper {
+    position: relative;
+    position: relative;
+    padding: 20px 18px; 
+    border-radius: 20px;
+    background-color: #0A0B0B;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+    border: 1px solid transparent;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .border-wrapper::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, #79E9AD 3%, transparent 40%);
+    opacity: 0;
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    z-index: 2;
+  }
+  
+  .border-wrapper:hover::before {
+    width: 700px;
+    height: 700px;
+    opacity: 1;
+  }
+
+  .border-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 18px;
+    background-color: rgba(10, 11, 11, 0.9);
+    z-index: 2;
+  }
+  .service-icon,
+.service-title,
+.service-description {
+  position: relative;
+  z-index: 3; 
+}
+
+  @media (min-width: 390px) {
+    .services-container {
+        flex-direction: column;
+        row-gap: 0px;
+        column-gap: 0px;
+      }
+    
+      .service-card {
+        padding: 30px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 19px;
+        margin-left: -11px;
+    }
+      
+      .service-title {
+        margin-bottom: 22px;
+        font-weight: 700;
+        line-height: 25px;
+        width: 310px;
+      }
+      
+      .service-description {
+        line-height: 22px;
+        width: 310px;
+      }
+  }
+  
+  @media (min-width: 576px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 0px;
+      }
+    
+      .service-card {
+        padding: 30px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 29px;
+        font-weight: 700;
+        line-height: 29px;
+        width: 468px;
+      }
+      
+      .service-description {
+        line-height: 24px;
+        width: 468px;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .services-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 0px;
+        column-gap: 50px;
+      }
+      
+      .service-card {
+        padding: 30px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 29px;
+        width: 275px;
+      }
+      
+      .service-description {
+        line-height: 24px;
+        width: 275px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 100px;
+      }
+      
+      .service-card {
+        padding: 30px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 29px;
+        width: 326px;
+      }
+      
+      .service-description {
+        line-height: 24px;
+        width: 326px;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 60px;
+      }
+      
+      .service-card {
+        padding: 50px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 29px;
+        width: 280px;
+      }
+      
+      .service-description {
+        line-height: 24px;
+        width: 280px;
+      }
+  }
+  
+  @media (min-width: 1440px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 70px;
+      }
+      
+      .service-card {
+        padding: 50px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        width: 353px;
+      }
+      
+      .service-description {
+        line-height: 26px;
+        width: 353px;
+      }
+  }
+  
+  @media (min-width: 1600px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 100px;
+      }
+      
+      .service-card {
+        padding: 50px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        width: 353px;
+      }
+      
+      .service-description {
+        line-height: 26px;
+        width: 353px;
+      }
+  }
+  
+  @media (min-width: 1920px) {
+    .services-container {
+        row-gap: 0px;
+        column-gap: 100px;
+      }
+      
+      .service-card {
+        padding: 50px 0px;
+      }
+      
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 22px;
+        margin-left: -14px;
+    }
+      
+      .service-title {
+        margin-bottom: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        width: 353px;
+      }
+      
+      .service-description {
+        line-height: 26px;
+        width: 353px;
+      }
+  }

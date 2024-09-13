@@ -1,0 +1,199 @@
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+.contact-form-p {
+    text-align: center;
+  }
+  
+  .contact-form-a {
+    color: #79e9ad;
+    text-decoration: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 390px) {
+    .contact-form-container {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      
+    .contact-form-h2 {
+        letter-spacing: -0.72px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 350px;
+      }
+      
+      form {
+        width: 350px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 576px) {
+    .contact-form-container {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      
+    .contact-form-h2 {
+        text-align: left;
+        margin-bottom: 40px;
+        letter-spacing: -0.88px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 437px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .contact-form-container {
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 52px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+    .contact-form-container {
+        margin-top: 60px;
+        margin-bottom: 60px
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 40px;
+        letter-spacing: -0.96px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    .contact-form-container {
+        margin-top: 60px;
+        margin-bottom: 80px
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 40px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 1440px) {
+    .contact-form-container {
+        margin-top: 80px;
+        margin-bottom: 80px
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 40px;
+        letter-spacing: -1.04px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 1600px) {
+    .contact-form-container {
+        margin-top: 80px;
+        margin-bottom: 80px
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 40px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }
+  
+  @media (min-width: 1920px) {
+    .contact-form-container {
+        margin-top: 80px;
+        margin-bottom: 80px
+      }
+      
+    .contact-form-h2 {
+        margin-bottom: 40px;
+      }
+      
+    .contact-form-p {
+        margin-bottom: 40px;
+        width: 590px;
+      }
+      
+      form {
+        width: 434px;
+        gap: 64px;
+      }
+  }

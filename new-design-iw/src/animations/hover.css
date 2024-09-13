@@ -1,0 +1,38 @@
+/* .link-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 24px;
+  }
+  
+  .link, .link::after {
+    display: block;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .link {
+    top: 0;
+  }
+  
+  .link::after {
+    content: attr(data-text);
+    top: 100%;
+    color: #FFFFFF; 
+    transform: translateY(70%);
+  }
+  */
+  
+  .link-container:hover .link {
+    /* transform: translateY(-50%); */
+    /* color: transparent; */
+    color: #FBFBFB;
+    cursor: pointer;
+  }
+  
+  /* .link-container:hover .link::after {
+    transform: translateY(0);
+    top: 0;
+  }
+    */

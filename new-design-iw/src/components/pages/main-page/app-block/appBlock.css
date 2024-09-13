@@ -1,0 +1,578 @@
+.responsive-section {
+    display: flex
+  }
+  
+  .app-heading {
+    color: #FBFBFB;
+  }
+  
+  .app-sub-heading {
+    display: flex;
+    color: #727375;
+    flex-direction: column;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .tech-item {
+    border-radius: 60px;
+    border: 1px solid #2B2D2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 8px 25px;
+    gap: 12px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  
+  .tech-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .image-block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #2B2D2E;
+    background: var(--gr-l, linear-gradient(180deg, #0A0B0B 0%, #0B1311 100%));
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-caption {
+    color: #FBFBFB;
+  }
+
+  .image-caption {
+    color: #727375;
+  }
+
+  .caption-arrow-block {
+    display: flex;
+  }
+
+  .arrow-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #171818;
+}
+
+.arrow {
+    color: #727375;
+}
+  
+.tech-item:hover {
+    border-color: #79E9AD;
+    box-shadow: 0 0 10px #79E9AD;
+}
+
+.iphone-video-block {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.app-image {
+    width: 330.34px;
+    height: 653.636px;
+    position: absolute;
+}
+
+.app-video {
+    width: 283.853px;
+    height: 613.488px;
+    padding-top: 17px;
+    overflow: hidden;
+}
+
+
+
+
+
+  @media (min-width: 390px) {
+    .responsive-section {
+        flex-direction: column;
+        gap: 60px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 350px;
+      }
+      
+      .app-heading {
+        margin-bottom: 32px;
+        font-weight: 700;
+        line-height: 42px; 
+        letter-spacing: -0.72px;
+        width: 350px;
+      }
+      
+      .app-sub-heading {
+        line-height: 22px;
+        gap: 16px;
+        width: 350px;
+        margin-bottom: 60px;
+      }
+            
+      .image-block {
+        height: 478px;
+        padding-top: 30px;
+      }
+
+      .caption-arrow-block {
+        gap: 16px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-left: 30px;
+        margin-bottom: 32px;
+        width: 244px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 22px;
+        width: 212px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 16px;
+        width: 244px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 1%;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .responsive-section {
+        gap: 44px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 508px;
+      }
+      
+      .app-heading {
+        margin-bottom: 32px;
+        font-weight: 700;
+        line-height: 48px; 
+        letter-spacing: -0.88px;
+        width: 509px;
+      }
+      
+      .app-sub-heading {
+        line-height: 24px;
+        gap: 16px;
+        width: 508px;
+        margin-bottom: 44px;
+      }
+            
+      .image-block {
+        height: 478px;
+        padding-top: 30px;
+      }
+
+      .caption-arrow-block {
+        gap: 16px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-left: 30px;
+        margin-bottom: 32px;
+        width: 402px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 236px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 20px;
+        width: 402px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 17%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-section {
+        gap: 44px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 680px;
+      }
+      
+      .app-heading {
+        margin-bottom: 32px;
+        font-weight: 700;
+        line-height: 48px; 
+        letter-spacing: -0.88px;
+        width: 680px;
+      }
+      
+      .app-sub-heading {
+        line-height: 24px;
+        gap: 16px;
+        width: 680px;
+        margin-bottom: 44px;
+      }
+            
+      .image-block {
+        height: 478px;
+        padding-top: 30px;
+      }
+
+      .caption-arrow-block {
+        gap: 50px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-left: 30px;
+        margin-bottom: 32px;
+        width: 540px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 236px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 20px;
+        width: 540px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 25%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .responsive-section {
+        flex-direction: row;
+        gap: 44px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 416px;
+      }
+      
+      .app-heading {
+        margin-bottom: 50px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: -0.96px;
+        width: 416px;
+      }
+      
+      .app-sub-heading {
+        line-height: 24px;
+        gap: 20px;
+        width: 416px;
+        margin-bottom: 50px;
+      }
+            
+      .image-block {
+        height: 508px;
+        padding-top: 30px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-left: 30px;
+        margin-bottom: 32px;
+        width: 276px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 236px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 20px;
+        width: 276px;
+      }
+    
+      .caption-arrow-block {
+        gap: 50px;
+      }
+      .app-image {
+        top: 1%;
+        left: 9%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .responsive-section {
+        gap: 80px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 500px;
+      }
+      
+      .app-heading {
+        margin-bottom: 50px;
+        margin-top: 12px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: -0.96px;
+        width: 500px;
+      }
+      
+      .app-sub-heading {
+        line-height: 24px;
+        gap: 20px;
+        width: 500px;
+        margin-bottom: 50px;
+      }
+      
+
+      .caption-arrow-block {
+        gap: 0px;
+      }
+      
+      .image-block {
+        height: 498px;
+        padding: 40px 40px 0px 40px;
+      }
+
+      .arrow-container {
+        display: none;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-left: 0px;
+        margin-bottom: 32px;
+        width: 420px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 236px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 20px;
+        width: 420px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 9%;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+
+    .responsive-section {
+        gap: 80px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 590px;
+      }
+      
+      .app-heading {
+        margin-bottom: 50px;
+        margin-top: 12px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: -1.04px;
+        width: 590px;
+      }
+      
+      .app-sub-heading {
+        line-height: 26px;
+        gap: 20px;
+        width: 590px;
+        margin-bottom: 50px;
+      }
+      
+      .image-block {
+        height: 553px;
+        padding: 45px 50px 0px 50px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-bottom: 47px;
+        width: 444px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 33px;
+        width: 283px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 444px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 19%;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .responsive-section {
+        gap: 90px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 640px;
+      }
+      
+      .app-heading {
+        margin-bottom: 50px;
+        margin-top: 24px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: -1.04px;
+        width: 590px;
+      }
+      
+      .app-sub-heading {
+        line-height: 26px;
+        gap: 20px;
+        width: 640px;
+        margin-bottom: 50px;
+      }
+      
+      .image-block {
+        height: 577px;
+        padding: 45px 50px 0px 50px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-bottom: 47px;
+        width: 444px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 33px;
+        width: 283px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 444px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 19%;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .responsive-section {
+        gap: 90px;
+        margin: 80px 0px;
+      }
+      
+      .stack-block {
+        width: 680px;
+      }
+      
+      .app-heading {
+        margin-bottom: 50px;
+        margin-top: 24px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: -1.04px;
+        width: 590px;
+      }
+      
+      .app-sub-heading {
+        line-height: 26px;
+        gap: 20px;
+        width: 680px;
+        margin-bottom: 50px;
+      }
+      
+      .image-block {
+        height: 577px;
+        padding: 45px 50px 0px 50px;
+      }
+      
+      .image-container {
+        gap: 16px;
+        margin-bottom: 47px;
+        width: 444px;
+      }
+    
+      .app-caption {
+        font-weight: 600;
+        line-height: 33px;
+        width: 283px;
+      }
+    
+      .image-caption {
+        font-weight: 600;
+        line-height: 24px;
+        width: 444px;
+      }
+
+      .app-image {
+        top: 2%;
+        left: 19%;
+    }
+  }

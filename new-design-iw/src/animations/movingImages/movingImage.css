@@ -1,0 +1,25 @@
+
+
+.moving-images-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .moving-image {
+    position: absolute;
+    animation: move var(--animation-duration) linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(var(--distance-x), var(--distance-y));
+    }
+  }

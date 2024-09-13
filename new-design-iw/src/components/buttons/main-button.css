@@ -1,0 +1,43 @@
+.button {
+    width: 200px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #FFF;   
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button {
+    color: #0A0B0B;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid var(--stoke-btn, #79E9AD);
+    background: #1E3329;
+    box-shadow: 0px 0px 50px 0px rgba(121, 233, 173, 0.20);
+    color: #79E9AD;
+  }
+  
+  
+  .button:active {
+    border-radius: 16px;
+    background: #518A72;
+    color: #0A0B0B;
+    border: none;
+  }
+
+  
+  
+
+
+
+  
