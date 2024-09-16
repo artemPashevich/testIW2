@@ -1,0 +1,251 @@
+body {
+    background-color: #0A0B0B;
+  }
+  
+  .animated-background {
+    position: relative;
+    width: auto;
+    overflow: hidden; 
+  }
+
+  .hello-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hello-container-h1 {
+    transform-style: preserve-3d;
+  }
+  
+  .hello-container-h5 {
+    color: #727375;
+    line-height: 30px;
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #79E9AD;
+    border-radius: 50%;
+    animation: move 10s infinite;
+    transition: transform 2s ease-out, top 2s ease-out;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(var(--distance-x), var(--distance-y));
+    }
+  }
+
+  .fall {
+    animation: none !important;
+    top: calc(var(--container-height) + 10px) !important;
+    transition: top 3s ease-out, left 2s ease-out; 
+  }
+  
+  .rise {
+    transition: top 2s ease-in-out; 
+  }
+
+  @media (min-width: 390px) {
+    .animated-background {
+        height: 608px;
+    }
+
+    .hello-container {
+        margin-top: 100px;
+        align-items: flex-start;
+    }
+
+    .hello-container-h1 {
+        width: 350px;
+        margin-bottom: 32px;
+        text-align: start;
+        line-height: 62px; 
+        letter-spacing: -1.08px;
+    }
+
+    .hello-container-h5 {
+        width: 350px;
+        margin-bottom: 44px;
+        text-align: start;
+        line-height: 24px;
+      }
+  }
+
+  @media (min-width: 576px) {
+    .animated-background {
+        height: 580px;
+    }
+
+    .hello-container {
+        margin-top: 100px;
+    }
+
+    .hello-container-h1 {
+        width: 480px;
+        margin-bottom: 32px;
+        line-height: 76px; 
+        letter-spacing: -1.24px;
+    }
+
+    .hello-container-h5 {
+        width: 355px;
+        margin-bottom: 44px;
+        line-height: 26px;
+      }
+  }
+
+  @media (min-width: 768px) {
+    .animated-background {
+        height: 580px;
+    }
+
+    .hello-container {
+        margin-top: 100px;
+    }
+
+    .hello-container-h1 {
+        width: 480px;
+        margin-bottom: 32px;
+        line-height: 76px;
+        letter-spacing: -1.24px;
+    }
+
+    .hello-container-h5 {
+        width: 355px;
+        margin-bottom: 44px;
+        line-height: 26px;
+      }
+  }
+
+  @media (min-width: 992px) {
+    .animated-background {
+        height: 722px;
+    }
+
+    .hello-container {
+        margin-top: 150px;
+    }
+
+    .hello-container-h1 {
+        width: 826px;
+        margin-bottom: 50px;
+        line-height: 96px; 
+        letter-spacing: -1.8px;
+    }
+
+    .hello-container-h5 {
+        width: 580px;
+        margin-bottom: 44px;
+        line-height: 26px;
+      }
+  }
+
+  @media (min-width: 1200px) {
+    .animated-background {
+        height: 688px;
+    }
+
+    .hello-container {
+        margin-top: 126px;
+        align-items: center;
+    }
+
+    .hello-container-h1 {
+        width: 779px;
+        margin-bottom: 50px;
+        text-align: center;
+        line-height: 96px; 
+        letter-spacing: -1.8px;
+    }
+
+    .hello-container-h5 {
+        width: 580px;
+        margin-bottom: 44px;
+        text-align: center;
+        line-height: 26px;
+      }
+  }
+
+  @media (min-width: 1440px) {
+    .animated-background {
+        height: 760px;
+    }
+
+    .hello-container {
+        margin-top: 106px;
+    }
+
+    .hello-container-h1 {
+        width: 826px;
+        margin-bottom: 50px;
+        line-height: 112px; 
+        letter-spacing: -2.12px;
+    }
+
+    .hello-container-h5 {
+        width: 580px;
+        margin-bottom: 44px;
+        line-height: 30px;
+      }
+  }
+
+  @media (min-width: 1600px) {
+    .animated-background {
+        height: 760px;
+    }
+
+    .hello-container {
+        margin-top: 106px;
+    }
+
+    .hello-container-h1 {
+        width: 826px;
+        margin-bottom: 50px;
+        line-height: 112px; 
+        letter-spacing: -2.12px;
+    }
+
+    .hello-container-h5 {
+        width: 580px;
+        margin-bottom: 44px;
+        line-height: 30px;
+      }
+  }
+
+  @media (min-width: 1920px) {
+    .animated-background {
+        height: 760px;
+    }
+
+    .hello-container {
+        margin-top: 106px;
+    }
+
+    .hello-container-h1 {
+        width: 826px;
+        margin-bottom: 50px;
+        line-height: 112px; 
+        letter-spacing: -2.12px;
+    }
+
+    .hello-container-h5 {
+        width: 580px;
+        margin-bottom: 44px;
+        line-height: 30px;
+      }
+  }
+
+
+
+
+
+
+
+
+
